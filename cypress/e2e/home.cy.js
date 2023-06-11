@@ -1,6 +1,6 @@
 describe('home page', () => {
   it('Start page is displayed', () => {
-    cy.visit('https://50projects50days.com/projects/insect-catch-game/')
+    cy.visit('127.0.0.1:8080')
     cy.get('h1')
       .should('exist')
       .contains('Catch The Insect')
@@ -10,7 +10,7 @@ describe('home page', () => {
   })
 
   it('Start a game', () => {
-    cy.visit('https://50projects50days.com/projects/insect-catch-game/')
+    cy.visit('127.0.0.1:8080')
     cy.get('#start-btn')
       .should('exist')
       .click()
@@ -29,7 +29,7 @@ describe('home page', () => {
   })
   
   it('Simulate a game', () => {
-    cy.visit('https://50projects50days.com/projects/insect-catch-game/')
+    cy.visit('127.0.0.1:8080')
     cy.get('#start-btn')
       .should('exist')
       .click()
@@ -61,7 +61,7 @@ describe('home page', () => {
   })
 
   it('Page elements are loaded correctly, timer is updated', () => {
-    cy.visit('https://50projects50days.com/projects/insect-catch-game/')
+    cy.visit('127.0.0.1:8080')
     cy.get('#start-btn')
       .should('exist')
       .click()
@@ -90,7 +90,7 @@ describe('home page', () => {
   })
   
   it('Page elements are loaded correctly, score is updated', () => {
-    cy.visit('https://50projects50days.com/projects/insect-catch-game/')
+    cy.visit('127.0.0.1:8080')
     cy.get('#start-btn')
       .should('exist')
       .click()
